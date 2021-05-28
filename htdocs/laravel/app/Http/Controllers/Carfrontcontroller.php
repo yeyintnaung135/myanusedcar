@@ -42,7 +42,7 @@ class Carfrontcontroller extends Controller
         //this cars list is last date post cars
         $car_list = $this->both->orderBy('uploat_at', 'desc')->limit('7')->get();
         $hot_cars = $this->both->orderBy('view_count', 'desc')->limit('20')->get();
-        $cheap_cars = $this->both->WhereBetween('price', [0, 60])->limit('16')->get();
+        $cheap_cars = $this->both->WhereBetween('price', [0,120])->limit('16')->get();
         $count_cheap = count($cheap_cars);
         if (Session::has('vcount')) {
             /*this is for while user is visit to our website visit count is increate but he refresh the page again and
@@ -142,7 +142,7 @@ class Carfrontcontroller extends Controller
     public function result_type($langId, $typeid)
     {
         //
-        $result = $this->both->Where('car_list.body_type', $typeid)->orderBy('car_list.id', 'desc')->paginate(7);
+        $result = $this->both->Where('car_list.body_type', $typeid)->orderBy('car_list.id', 'desc')->paginate(8);
         return view('front.result', ['results' => $result, 'type' => $typeid]);
 
     }
@@ -150,7 +150,7 @@ class Carfrontcontroller extends Controller
     public function see_all($langId)
     {
         //
-        $result = $this->both->orderBy('car_list.id', 'asc')->paginate(7);
+        $result = $this->both->orderBy('car_list.id', 'asc')->paginate(8);
         return view('front.result', ['results' => $result]);
 
     }
@@ -158,7 +158,7 @@ class Carfrontcontroller extends Controller
     public function popular($langId)
     {
         //
-        $result = $this->both->orderBy('car_list.view_count', 'desc')->paginate(7);
+        $result = $this->both->orderBy('car_list.view_count', 'desc')->paginate(8);
         return view('front.result', ['results' => $result]);
 
     }
@@ -166,7 +166,7 @@ class Carfrontcontroller extends Controller
     public function latest($langId)
     {
         //
-        $result = $this->both->orderBy('car_list.id', 'desc')->limit(70)->paginate(7);
+        $result = $this->both->orderBy('car_list.id', 'desc')->limit(70)->paginate(8);
         return view('front.result', ['results' => $result]);
 
     }

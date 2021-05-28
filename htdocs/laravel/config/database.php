@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'sql100.rf.gd',
-            'database'  => 'rfgd_18951911_carshowroom',
-            'username'  => 'rfgd_18951911',
-            'password'  => 'sawkyibal',
+            'host'      => 'localhost',
+            'database'  => 'car',
+            'username'  => 'root',
+            'password'  => '',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://myanusedcar.rf.gd',
+    'url' => 'localhost',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => oZK971VhCg66FaHC8XMY2gMA4wbQneE8,
+    'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
 

@@ -228,6 +228,9 @@
                                                 <th>
                                                     permission
                                                 </th>
+  <th>
+                                                    created_at
+                                                </th>
                                                 <th>
 
                                                 </th>
@@ -265,6 +268,9 @@
                                                         @endfor
 
                                                     </td>
+<td>
+{{$row->created_at}}
+</td>
                                                     <td>
 
                                                         <div class="hidden-sm hidden-xs action-buttons">
@@ -395,7 +401,7 @@
                                 bAutoWidth: false,
                                 "aoColumns": [
                                     {"bSortable": false},
-                                    null, null, null,null,null,
+                                    null, null, null,null,null,null,
 
                                     {"bSortable": false}
                                 ],

@@ -2,9 +2,9 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: sql100.rf.gd
--- Generation Time: Apr 18, 2021 at 01:20 AM
--- Server version: 5.6.48-88.0
+-- Host: sql100.byetcluster.com
+-- Generation Time: Jan 31, 2020 at 12:18 PM
+-- Server version: 5.6.45-86.1
 -- PHP Version: 7.2.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -66,14 +66,14 @@ CREATE TABLE `car_list` (
 
 INSERT INTO `car_list` (`id`, `brand`, `model`, `engine`, `detail`, `price`, `feature`, `appliances`, `license`, `km`, `photo1`, `photo2`, `photo3`, `photo4`, `photo5`, `photo6`, `photo7`, `doors`, `fuel`, `year`, `town`, `address`, `body_type`, `transmittion`, `exterior_color`, `interior_color`, `view_count`, `uploat_at`, `user_id`) VALUES
 (20, 'Bentley', 'lkafkla', 'jalkfjkla', 'kjafkafkafjkl', 11, 'Banned', 'Tag Input Control', 'license with own name', '333', '14768794211.jpg', '14768794212.jpg', '14768794213.jpg', '14768794214.jpg', '14768794225.jpg', '', '', '3', 'octane', '2011', '', '', 'wagon', 'Auto', 'black', 'white', '0', '2016-11-02 17:38:19', 59),
-(35, 'Nissan', 'wingroad rider autech', '1500', 'Nissan Wingroad Rider Autech( Super black) ။ 1500cc 2Wheel / ရန္ကုန္လိုင္စင္ 5F/8006 လိုင္စင္သက္တမ္း30.9.2017/ Grand Guardian ေမာ္ေတာ္ယဥ္အလံုးစံုအာမခံပါ၀င္ပါသည္ ။ Rider Autech(အထူးထုတ္)grade အမွန္ျဖစ္ေသာေၾကာင့္ ေရွ႔ေနာက္ဘန္ဘာoriginal ပံုေျပာင္းျဖစ္သည္ modifyဘန္ဘာမဟုတ္ပါ၊ ', 75, 'Yes', 'Tag Input Control', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '140000', '14827394841.JPG', '14827394862.JPG', '14827394863.JPG', '14827394864.JPG', '14827394865.JPG', '14827394866.JPG', '14827394867.JPG', '5', 'octane', '2006', '', '', 'wagon', 'Auto', 'super black', 'black', '15', '2020-02-06 19:28:48', 109),
-(34, 'Suzuki', '2010', '660', 'Suzuki Alto 2010 late Push Start Original Cd player မွွန္မဲမီေခ်ာက္ပါ အတြင္းခန္းလည္သာခင္းျပီး ထိုင္ခုံစြပ္ပါျပီး အင္ဂ်င္ဝိုင္အသစ္ ပလပ္အသစ္ ဂီယာဝိုင္အသစ္ ေအာက္ပိုင္းအသံမရိွ 2L/2394  YGN 660 cc ရွားပါးကားေလးကို အသင့္ေတာ္ဆုံးေစ်းျဖင့္ေရာင္းေပးပါမည္', 110, 'Yes', 'Push Start all power window, air con very good ဘက္မွန္မီးေခ်ာက္ မွန္ခ်ဳိးမွန္ေခါက္ မွန္ခ်ိန္မီးခ်ိန္', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '133', '14823850911.jpg', '14823850952.jpg', '14823850963.jpg', '14823850964.jpg', '14823850975.jpg', '14823850976.jpg', '14823850977.jpg', '5', 'octane', '2010', '', '', 'wagon', 'Auto', 'အျဖဴ', 'အသားေရာင္', '142', '2016-12-22 05:38:11', 100),
-(33, 'Toyota', '1996', '3000 cc', 'ssrx ကတံုး အင္ဂ်င္ေကာင္း အေငြ႔လြတ္ ေအာက္ပိုင္းေကာင္း ဖရိန္ေကာင္း battery ၂လံုး', 185, 'Yes', 'TV, BACK CAMERA', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '174000', '14801873761.jpeg', '14801873762.jpeg', '14801873763.jpeg', '14801873764.jpeg', '14801873765.jpeg', '14801873766.jpeg', '14801873767.jpeg', '5', 'diesal', '1996', '', '', 'wagon', 'Auto', 'dark green', 'grey', '143', '2016-11-26 19:09:36', 73),
-(40, 'Toyota', '2014', '1300 cc', 'All power windows ', 245, 'Yes', '', 'အမည္ေပါက္လိုင္စင္', '82000', '15197329341.jpg', '15197329362.jpg', '15197329363.jpg', '15197329364.jpg', '15197329375.jpg', '15197329386.jpg', '15197329397.jpg', '4', 'octane', '2014', '', '', 'others', 'Auto', 'နက္', 'နက္', '24', '2018-02-27 12:02:14', 148),
-(36, 'Honda', 'HONDA FIT', '1.3', 'Honda Fit \r\nGE 7\r\n2012\r\n5M.83\r\nMandalay လိုင္စင္\r\nJapan modifine\r\nလက္တင္စီးရံု\r\nဝူဖာ\r\nမီးပတ္လည္\r\nေအာ္ ပါဝါ အိပ္ေဇာ္\r\nဒီပံုစံ ေနာက္တစီး မ႐ွိႏွိင္ေလာက္ေအာင္\r\nေနာက္မီးခြက္ ပံုစံ\r\nက်န္တာကေတာ့ \r\nစိတ္ဝင္စားရင္ ကားလာၾကည့္ဖို႔ ဖိတ္ေခၚပါရေစ\r\nအခုပံုေတြက ဆိပ္ကမ္းက ပံုေတြပါ\r\nအျပင္မွာ ႐ွဲက ဖန္႐ွဲဖစ္သြားပါပီ\r\n\r\nေရာင္းေစ်း ၁၆၅ ပါ\r\n\r\n09425012258', 165, 'Yes', 'Tag Input Control', 'လိုင္စင္ရွိ(အမည္ေပါက္မဟုတ္)', '60000', '14835446481.jpg', '14835446492.jpg', '14835446493.jpg', '14835446494.jpg', '14835446495.jpg', '14835446496.jpg', '14835446497.jpg', '5', 'octane', '2012', '', '', 'sedan', 'Auto', 'White', 'Black', '153', '2017-01-04 15:44:08', 123),
-(37, 'Suzuki', 'Carry Truck', '660', 'SUZUKI CARRY\r\n2010\r\nOr back cam\r\nSonar 2 လံုး\r\nေအာ္တို ပါဝါ လက္လည့္\r\nကီလို 5 ေသာင္း ေက်ာ္ \r\nMDY စတိ နံပါတ္\r\nဂရိတ္ ၄ ထြက္ထား\r\n\r\nေရာင္းေစ်း ၈၉ သိန္း \r\n\r\n09425012258', 89, 'Yes', 'Tag Input Control', 'မရွိ', '50000', '14835448671.jpg', '14835448672.jpg', '14835448683.jpg', '14835448684.jpg', '14835448685.jpg', '14835448686.jpg', '14835448687.jpg', '2', 'octane', '2010', '', '', 'truck', 'Auto', 'White', 'Black', '92', '2017-01-04 15:47:47', 123),
-(41, 'Toyota', '2007', '1.5', 'ကားေကာင္းကားသန္႔ပါ\r\ncngကားခ်ိန္မွာမို႔လို႔အျမန္ေရာင္းခ်င္ပါသည္  မွက္ခ်က္//4Wျဖစ္ပါသည္\r\nph:09250270510\r\nေျမာက္ဒဂုံ ယာဥ္ေမာင္းသင္တန္းကြင္းအနီးကားၾကည့္ရပါမည္။', 134, 'Yes', '', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '359300', '15201450651.jpg', '15201450672.jpg', '15201450683.jpg', '15201450684.jpg', '15201450695.jpg', '15201450706.jpg', '15201450717.jpg', '5', 'octane', '2007', '', '', 'wagon', 'Auto', 'white', 'black', '32', '2018-03-04 06:31:05', 152),
-(42, 'Toyota', '2002', '2000cc', 'ကားေကာင္း ကားသန္႔ ေအာက္ပိုင္းလုပ္ပီး အတိုက္အခိုက္ရွင္း ယာဥ္စစ္ပီး\r\nလိုင္စင္ 2019 10လ\r\n  09253953539', 197, 'Yes', '', 'အမည္ေပါက္လိုင္စင္', '120000', '15364728291.jpeg', '15364728332.jpeg', '15364728343.jpeg', '15364728354.jpeg', '15364728365.jpeg', '15364728376.jpeg', '15364728387.jpeg', '4', 'octane', '2002', '', '', 'wagon', 'Auto', 'ပလဲျဖဴ', 'ပလဲျဖဴ', '40', '2018-09-09 06:00:29', 138);
+(35, 'Nissan', 'wingroad rider autech', '1500', 'Nissan Wingroad Rider Autech( Super black) ။ 1500cc 2Wheel / ရန္ကုန္လိုင္စင္ 5F/8006 လိုင္စင္သက္တမ္း30.9.2017/ Grand Guardian ေမာ္ေတာ္ယဥ္အလံုးစံုအာမခံပါ၀င္ပါသည္ ။ Rider Autech(အထူးထုတ္)grade အမွန္ျဖစ္ေသာေၾကာင့္ ေရွ႔ေနာက္ဘန္ဘာoriginal ပံုေျပာင္းျဖစ္သည္ modifyဘန္ဘာမဟုတ္ပါ၊ ရိုးရိုးwingroadမ်ားထက္ေအာက္ပိုင္းပိုျမင့္သည္၊originalစကတ္ပတ္လည္ျဖစ္သည္ /Japan Pioneer TV (DVD USB)with original back camera စပီကာ၄လံုးပတ္လည္ steering ႀကိဳးခ်ဳုပ္ ။ 2006/07 ေမာ္ဒယ္ျဖစ္ေသာေၾကာင့္ original high kit ျဖစ္သည္ ။ ကီလို1*****အထက္ျဖစ္သည္ ။Automatic transmission, All auto windows , Airbags, Air conditioning, 18”Alloy Rims, Foglights ။ 175 သိန္း ညွိႏွိုင္း ျဖင့္ေ၇ာင္းမည္ ။ 095408127', 175, 'Yes', 'Tag Input Control', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '140000', '14827394841.JPG', '14827394862.JPG', '14827394863.JPG', '14827394864.JPG', '14827394865.JPG', '14827394866.JPG', '14827394867.JPG', '5', 'octane', '2006', '', '', 'wagon', 'Auto', 'super black', 'black', '120', '2016-12-26 08:04:44', 109),
+(34, 'Suzuki', '2010', '660', 'Suzuki Alto 2010 late Push Start Original Cd player မွွန္မဲမီေခ်ာက္ပါ အတြင္းခန္းလည္သာခင္းျပီး ထိုင္ခုံစြပ္ပါျပီး အင္ဂ်င္ဝိုင္အသစ္ ပလပ္အသစ္ ဂီယာဝိုင္အသစ္ ေအာက္ပိုင္းအသံမရိွ 2L/2394  YGN 660 cc ရွားပါးကားေလးကို အသင့္ေတာ္ဆုံးေစ်းျဖင့္ေရာင္းေပးပါမည္', 110, 'Yes', 'Push Start all power window, air con very good ဘက္မွန္မီးေခ်ာက္ မွန္ခ်ဳိးမွန္ေခါက္ မွန္ခ်ိန္မီးခ်ိန္', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '133', '14823850911.jpg', '14823850952.jpg', '14823850963.jpg', '14823850964.jpg', '14823850975.jpg', '14823850976.jpg', '14823850977.jpg', '5', 'octane', '2010', '', '', 'wagon', 'Auto', 'အျဖဴ', 'အသားေရာင္', '132', '2016-12-22 05:38:11', 100),
+(33, 'Toyota', '1996', '3000 cc', 'ssrx ကတံုး အင္ဂ်င္ေကာင္း အေငြ႔လြတ္ ေအာက္ပိုင္းေကာင္း ဖရိန္ေကာင္း battery ၂လံုး', 185, 'Yes', 'TV, BACK CAMERA', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '174000', '14801873761.jpeg', '14801873762.jpeg', '14801873763.jpeg', '14801873764.jpeg', '14801873765.jpeg', '14801873766.jpeg', '14801873767.jpeg', '5', 'diesal', '1996', '', '', 'wagon', 'Auto', 'dark green', 'grey', '138', '2016-11-26 19:09:36', 73),
+(40, 'Toyota', '2014', '1300 cc', 'All power windows ', 245, 'Yes', '', 'အမည္ေပါက္လိုင္စင္', '82000', '15197329341.jpg', '15197329362.jpg', '15197329363.jpg', '15197329364.jpg', '15197329375.jpg', '15197329386.jpg', '15197329397.jpg', '4', 'octane', '2014', '', '', 'others', 'Auto', 'နက္', 'နက္', '23', '2018-02-27 12:02:14', 148),
+(36, 'Honda', 'HONDA FIT', '1.3', 'Honda Fit \r\nGE 7\r\n2012\r\n5M.83\r\nMandalay လိုင္စင္\r\nJapan modifine\r\nလက္တင္စီးရံု\r\nဝူဖာ\r\nမီးပတ္လည္\r\nေအာ္ ပါဝါ အိပ္ေဇာ္\r\nဒီပံုစံ ေနာက္တစီး မ႐ွိႏွိင္ေလာက္ေအာင္\r\nေနာက္မီးခြက္ ပံုစံ\r\nက်န္တာကေတာ့ \r\nစိတ္ဝင္စားရင္ ကားလာၾကည့္ဖို႔ ဖိတ္ေခၚပါရေစ\r\nအခုပံုေတြက ဆိပ္ကမ္းက ပံုေတြပါ\r\nအျပင္မွာ ႐ွဲက ဖန္႐ွဲဖစ္သြားပါပီ\r\n\r\nေရာင္းေစ်း ၁၆၅ ပါ\r\n\r\n09425012258', 165, 'Yes', 'Tag Input Control', 'လိုင္စင္ရွိ(အမည္ေပါက္မဟုတ္)', '60000', '14835446481.jpg', '14835446492.jpg', '14835446493.jpg', '14835446494.jpg', '14835446495.jpg', '14835446496.jpg', '14835446497.jpg', '5', 'octane', '2012', '', '', 'sedan', 'Auto', 'White', 'Black', '140', '2017-01-04 15:44:08', 123),
+(37, 'Suzuki', 'Carry Truck', '660', 'SUZUKI CARRY\r\n2010\r\nOr back cam\r\nSonar 2 လံုး\r\nေအာ္တို ပါဝါ လက္လည့္\r\nကီလို 5 ေသာင္း ေက်ာ္ \r\nMDY စတိ နံပါတ္\r\nဂရိတ္ ၄ ထြက္ထား\r\n\r\nေရာင္းေစ်း ၈၉ သိန္း \r\n\r\n09425012258', 89, 'Yes', 'Tag Input Control', 'မရွိ', '50000', '14835448671.jpg', '14835448672.jpg', '14835448683.jpg', '14835448684.jpg', '14835448685.jpg', '14835448686.jpg', '14835448687.jpg', '2', 'octane', '2010', '', '', 'truck', 'Auto', 'White', 'Black', '81', '2017-01-04 15:47:47', 123),
+(41, 'Toyota', '2007', '1.5', 'ကားေကာင္းကားသန္႔ပါ\r\ncngကားခ်ိန္မွာမို႔လို႔အျမန္ေရာင္းခ်င္ပါသည္  မွက္ခ်က္//4Wျဖစ္ပါသည္\r\nph:09250270510\r\nေျမာက္ဒဂုံ ယာဥ္ေမာင္းသင္တန္းကြင္းအနီးကားၾကည့္ရပါမည္။', 134, 'Yes', '', '၇န္ကုန္လိုင္စင္ (အမည္ေပါက္)', '359300', '15201450651.jpg', '15201450672.jpg', '15201450683.jpg', '15201450684.jpg', '15201450695.jpg', '15201450706.jpg', '15201450717.jpg', '5', 'octane', '2007', '', '', 'wagon', 'Auto', 'white', 'black', '30', '2018-03-04 06:31:05', 152),
+(42, 'Toyota', '2002', '2000cc', 'ကားေကာင္း ကားသန္႔ ေအာက္ပိုင္းလုပ္ပီး အတိုက္အခိုက္ရွင္း ယာဥ္စစ္ပီး\r\nလိုင္စင္ 2019 10လ\r\n  09253953539', 197, 'Yes', '', 'အမည္ေပါက္လိုင္စင္', '120000', '15364728291.jpeg', '15364728332.jpeg', '15364728343.jpeg', '15364728354.jpeg', '15364728365.jpeg', '15364728376.jpeg', '15364728387.jpeg', '4', 'octane', '2002', '', '', 'wagon', 'Auto', 'ပလဲျဖဴ', 'ပလဲျဖဴ', '33', '2018-09-09 06:00:29', 138);
 
 -- --------------------------------------------------------
 
@@ -307,8 +307,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `permission`, `f
 (153, 'ဦးမင္းမင္း', 'minthettun88@gmail.com', '$2y$10$nU5.SxgzQ367l4FWEzcR0eRS8695ULjDJsKTQi5zQLm0aKrx1YLue', 'member', '', '', '09765101055', 'Yangon Division', 'hlaing', '1520815277profile1520815114395-163417067.jpg', '2', NULL, '2018-03-12 04:41:18', '2018-03-12 04:41:18'),
 (154, 'AungTunMin', 'aungtunmin.14@emil.com', '$2y$10$vZaGNOMIzZ7WKQqUfOC.ieEz4YQwyfql2q3skNpJSSIfYky.X6g0O', 'member', '', '', '09253953539', 'Bago Division', 'ေဆးရံုေဟာင္းလမ္း ပဲခူးၿမိဳ႕', '1536470688profile5D64977C-F7AB-4B2F-A1BE-F1AC9DE0B481.jpeg', '2', NULL, '2018-09-09 09:24:48', '2018-09-09 09:24:48'),
 (155, 'htun htun', 'aungtunmin.14@gmail.com', '$2y$10$QQiOpDi7e3zr20A3nEoUCeUMVEc8nAckqxv4eUrer4A2D5qS.AslK', 'member', '', '', '09253953539', 'Bago Division', 'ေဆးရံုေဟာင္းလမ္း ပဲခူး', '1536471804profileB35D7978-EF3D-4244-A563-026EFA0C1C84.jpeg', '2', NULL, '2018-09-09 09:43:24', '2018-09-09 09:43:24'),
-(156, 'ဦးသူဟန္', 'thuhan.geologist87@gmail.com', '$2y$10$5yuZ/nVoD6LYf6QjL1/GLes4pmk.a8M9CeoZSUv9bb/iRvZkWWRSu', 'member', '', '', '0943136491', 'Yangon Division', 'အိမ္အမွတ္၄၇၄ သစၥာ(၁)လမ္း ေနျပည္ေတာ္', '1557895036profile04E7453C-E772-4E75-8B71-C71AB4DD4A0E.jpeg', '2', NULL, '2019-05-15 08:37:17', '2019-05-15 08:37:17'),
-(157, 'taco', 'geogatedproject120@gmail.com', '$2y$10$8lCK.QwvUUwaFvehKTmPVuYK69MIad/7A6BF0OLRsH9IwwIiT9ZE6', 'member', '', '', '32523456783', 'Yangon Division', '1 Oil St.', '1582072048profileScreen Shot 2020-01-20 at 3.42.18 PM.png', '2', 'OfRNd8ay5FZvCba3dE4mOO0s4nBZe0Z0f0H5ltkhDeQ12dZ3W96HMr3RTETR', '2020-02-19 05:27:29', '2020-02-19 05:28:41');
+(156, 'ဦးသူဟန္', 'thuhan.geologist87@gmail.com', '$2y$10$5yuZ/nVoD6LYf6QjL1/GLes4pmk.a8M9CeoZSUv9bb/iRvZkWWRSu', 'member', '', '', '0943136491', 'Yangon Division', 'အိမ္အမွတ္၄၇၄ သစၥာ(၁)လမ္း ေနျပည္ေတာ္', '1557895036profile04E7453C-E772-4E75-8B71-C71AB4DD4A0E.jpeg', '2', NULL, '2019-05-15 08:37:17', '2019-05-15 08:37:17');
 
 -- --------------------------------------------------------
 
@@ -326,7 +325,7 @@ CREATE TABLE `website` (
 --
 
 INSERT INTO `website` (`id`, `visit_counts`) VALUES
-(1, 2040);
+(1, 1726);
 
 --
 -- Indexes for dumped tables
@@ -409,7 +408,7 @@ ALTER TABLE `subscribe`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=158;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
 -- AUTO_INCREMENT for table `website`

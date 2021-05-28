@@ -8,115 +8,91 @@
         $lang_path = 'en';
     }
     ?>
-    <div id="content" class="page-filter">
+    <div class="container-fluid" style="background:#f1efef;">
+        <div class="row mt-5 mb-5 ml-0 mr-0 ml-sm-3 mr-sm-3 mr-lg-5 ml-lg-5 bg-white shadow-sm rounded">
 
-        <div class="section gray-light">
-            <div class="container">
-                <div class="row">
+            <div class="row w-100 mt-5 mb-3">
+                {{--title--}}
+                <div class='col-12' style="">
+                    <h2 class="" style="text-align:center;font-weight: bolder;"><span
+                                class="">All News</span></h2>
+                </div>
+                {{--title--}}
+                {{--see all buttom--}}
 
-                    <div class="col-md-9">
-
-                        <div id="main">
-                            <div class="row-block block block-margin">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="content white">
-                                            <div class="inner">
-                                                @foreach ($news as $row)
-
-                                                    <div class="row-item">
-                                                        <div class="inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4 col-md-5 col-sm-5">
-                                                                    <div class="picture">
+                {{--see all buttom--}}
 
 
-                                                                        <!-- /.slide -->
-                                                                        <!-- /.slide -->
-                                                                        <!-- /.slide -->
-                                                                        <!-- /.slide -->
+            </div>
 
 
-                                                                        <a  href="#"
-                                                                                class="slide cycle-slide cycle-slide-active">
-                                                                            <img src="{{asset('backend/images/newlist')}}/{{$row->photo}}"
-                                                                                 alt="#">
-                                                                        </a>
+            <br>
+            <div class="col-12 mt-1">&nbsp;</div>
+            <?php
+            if(count($news) == 0)//if result count value is 0
+            {
+            ?>
+            <div style="text-align:center;color:#ab650a;">
+                <h3>Sorry! {{trans('greeting.empty')}}</h3>
+            </div>
+            <?php
+            }
+            ?>
+            @foreach ($news as $row)
 
-                                                                    </div><!-- /.picture -->
-                                                                </div><!-- /.col-md-4 -->
-
-                                                                <div class="col-lg-8 col-md-7 col-sm-7">
-
-                                                                    <div class="content-inner">
-                                                                        <h3>
-                                                                            <a href="#" style="color:#ab650a;">
-                                                                                {{str_limit($row->name,25)}}
-                                                                            </a>
-                                                                        </h3>
-
-                                                                        <!-- /.subtitle -->
-
-                                                                        <div class="price">
-                                                                            {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('Y')}}
-                                                                            &nbsp;&nbsp; {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('F')}}
-                                                                            &nbsp;&nbsp;{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('j')}}
+                <div class="col-12 col-md-6 col-lg-4 mb-3 bg-white">
 
 
-                                                                        </div><!-- /.price -->
-
-                                                                        <div class="description">
-                                                                            <p style="font-weight:bold;color:black;word-break:break-all"> {{str_limit($row->description,93) }}
-                                                                            </p>
-                                                                        </div><!-- /.description -->
-
-                                                                        <div class="meta">
-                                                                            <ul>
-
-                                                                                <li style="background-color:white;">
-
-                                                                                    <a href="{{url('/'.$lang_path.'/detailnew/'.$row->id)}}"
-                                                                                       class="btn btn-small hvr-underline-from-center btn-danger smallbuttom">
-                                                                                        {{trans('greeting.readmore')}}                                                                                    </a>
-
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div><!-- /.meta -->
-                                                                    </div><!-- /.content-inner -->
-                                                                </div><!-- /.col-md-8 -->
-                                                            </div><!-- /.row -->
-                                                        </div><!-- /.inner -->
-                                                    </div><!-- /.row-item -->
-                                                @endforeach
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" style="width:150px;height:150px;" src="{{asset('backend/images/newlist/'.$row->photo)}}" alt="Card image cap">
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div id="filter-pager" class="block">
-                                    <div class="block-inner gray">
-                                        <div class="pager">
-                                            <div class="row">
-                                                {!! (new App\Pagination($news))->render() !!}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title"> {{$row->name}}</h4>
+                                <br>
+                                <p class="card-text">{{str_limit($row->description,'52')}}
+                                </p>
+                                <br>
+                                <a href="{{url('/'.$lang_path.'/detailnew/'.$row->id)}}"
+                                   class="btn btn-sm hvr-underline-from-center btn-danger smallbuttom "
+                                   style="border-radius: .25rem !important;width:100% !important;font-weight:bolder;background:#f60;">{{trans('greeting.readmore')}}&nbsp; <span
+                                            class="fa fa-chevron-right"></span></a>
                             </div>
-                        </div>
 
-                        <!-- /#mainmini -->
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('Y')}}
+                                &nbsp;&nbsp; {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('F')}}
+                                &nbsp;&nbsp;{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$row->uploat_at)->format('j')}}</small>
+                        </div>
                     </div>
-                    <!--search sibe div-->
-                    @parent
-                            <!--search sibe div-->
+                </div>
+
+
+
+        @endforeach
+            <div class="col-12">
+                <div class="col-md-12">
+                    <div id="filter-pager" class="block">
+                        <div class="block-inner bg-white">
+                            <div class="pager">
+                                <div class="row d-flex justify-content-center" style="list-style-type: none;" >
+                                    {!! (new App\Pagination($news))->render() !!}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+            <!--news bar and category bar-->
         </div>
+
+
     </div>
 @endsection
 

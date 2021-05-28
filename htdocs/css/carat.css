@@ -2,6 +2,13 @@
     float: right
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+.yk-nav{
+    margin-left: -25px !important;
+    margin-right: -25px !important;
+}
 
 @media (max-width: 992px) {
     .topbar .header-top-right > div {
@@ -416,7 +423,6 @@
 
 .languages {
     float: left;
-    margin: 8px 10px 0px 10px
 }
 
 .languages ul {
@@ -1392,12 +1398,7 @@ form label {
     padding: 15px
 }
 
-.block.row-block .content {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-    padding: 15px 0px
-}
+
 
 .block.row-block .row-item {
     margin-bottom: 15px;
@@ -4714,7 +4715,7 @@ html {
 }
 
 body {
-    display: table;
+    /*display: table;*/
     font-family: Arial, sans-serif;
     height: 100%;
     min-height: 100%;
@@ -5004,18 +5005,16 @@ ul {
     display: inline;
 }
 
-.cstlogo {
-    margin-top: -2.5%;
-    margin-right: -2%;
-    margin-bottom: -3%;
-    margin-left: -1%;
-    height: 116px;
+
+.cstlogo img {
+   height:79px;
+
 }
 
 .logottl {
     color: white;
-    font-family: cursive;
-    font-size: 23px;
+
+    font-size: 34px !important;
 
 }
 
@@ -5042,14 +5041,10 @@ ul {
     color: blue !important;
 }
 
-.btn {
-    border: 2px solid #c02f2f;
 
-}
 
 .btn:hover {
-    background-color: #F74949;
-    border: 2px solid #F74949;
+    background-color: #ff7e2f;
 
 }
 
@@ -5173,7 +5168,6 @@ ul {
 
     .smallmenu:active {
         background-color: #F74949;
-        border: 2px solid #F74949;
 
     }
 
@@ -5264,6 +5258,7 @@ ul {
     .btn-small {
         font-size: 12px;
         font-weight: bolder;
+        background-color:black;
 
     }
 
@@ -5308,7 +5303,7 @@ ul {
 }
 
 .black {
-    background-color: rgba(96, 45, 22, 1);
+    background-color: rgb(255 255 255);
 
 }
 
@@ -5322,7 +5317,7 @@ ul {
 }
 
 .smallbuttom {
-    background-color: #F72615;
+    background-color: #f60;
 }
 
 .disabled a {
@@ -5357,18 +5352,15 @@ ul {
     display: inline;
 }
 
-.cstlogo {
-    margin-top: -2.5%;
-    margin-right: -2%;
-    margin-bottom: -3%;
-    margin-left: -1%;
-    height: 116px;
-}
 
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem !important;
+}
 .logottl {
     color: white;
-    font-family: cursive;
-    font-size: 23px;
+
+    font-size: 34px;
 
 }
 
@@ -5395,14 +5387,10 @@ ul {
     color: blue !important;
 }
 
-.btn {
-    border: 2px solid #c02f2f;
 
-}
 
 .btn:hover {
-    background-color: #F74949;
-    border: 2px solid #F74949;
+    background-color: #F74949 ;
 
 }
 
@@ -5492,7 +5480,6 @@ ul {
 
     .smallmenu:active {
         background-color: #F74949;
-        border: 2px solid #F74949;
 
     }
 
@@ -5623,7 +5610,7 @@ ul {
 }
 
 .black {
-    background-color: rgba(96, 45, 22, 1);
+    background-color: #333;
 
 }
 
@@ -5635,9 +5622,14 @@ ul {
     height: 34px;
     font-size: 11px;
 }
-
+.btn:hover {
+    background-color: #ff7e2f !important;
+}
+.btn-danger{
+    border-color:#ff7e2f;
+}
 .smallbuttom {
-    background-color: #F72615;
+    background-color: #f60;
 }
 
 .disabled a {
