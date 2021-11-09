@@ -42,7 +42,8 @@
         </div>
         <div class="col-8 col-md-4 col-lg-6">
             <div class="logottl text-md-center" style="letter-spacing:9px;">MyanusedCar</div>
-            <div class="logottl text-md-center" style="font-size:19px !important;">(usedကားေ၇ာင္း၀ယ္website)</div>
+            <div class="logottl text-md-center" style="font-size:19px !important;">(ကားရောင်းဝယ်website)
+                </div>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3">

@@ -11,8 +11,7 @@ if (preg_match('/mm/', \Request::PATH())) {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <!--this meta tag is for vision percentage-->
-    <meta name="viewport" content="width=device-width, initial-scale=0.93">
-    <!--end-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    <!--end-->
 
     <link rel="shortcut icon" href="#">
     <link rel='stylesheet' id='headers-css' href="{{asset('css/converio/styles/headers.css')}}" type='text/css'
@@ -116,6 +115,13 @@ if (preg_match('/mm/', \Request::PATH())) {
 .table td{
     border:0px !important;
          }
+        @media (max-width: 575.98px) {
+            .ykfs{
+                font-size:74% !important;
+            }
+
+        }
+
     </style>
 
 
@@ -144,7 +150,7 @@ if (preg_match('/mm/', \Request::PATH())) {
                 {{--title--}}
                 <div class='col-7' style="">
                     <h2 class="" style="position:absolute;right:0;font-weight: bolder;"><span
-                                class="">{{trans('greeting.news')}}</span></h2>
+                                class="ykfs">{{trans('greeting.news')}}</span></h2>
                 </div>
                 {{--title--}}
                 {{--see all buttom--}}
