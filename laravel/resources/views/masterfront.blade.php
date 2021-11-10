@@ -5,7 +5,7 @@ if (preg_match('/mm/', \Request::PATH())) {
     $lang_path = 'en';
 }
 ?>
-        <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -29,11 +29,15 @@ if (preg_match('/mm/', \Request::PATH())) {
     <link href="{{asset('css/faw/css/brands.css')}}" rel="stylesheet">
     <link href="{{asset('css/faw/css/solid.css')}}" rel="stylesheet">
 
+
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}"/>
 
 
     <title>Myan Used Car</title>
     <style>
+
+        @import url(http://fonts.googleapis.com/earlyaccess/khyay.css);
+
         .form-custom {
             border: 3px solid #d6d6d6;
             background: rgba(119, 87, 80, 0.03);
@@ -126,7 +130,7 @@ if (preg_match('/mm/', \Request::PATH())) {
 
 
 </head>
-<body>
+<body style="">
 <div class="" style="background:#f1efef;">
 
     {{--Top bar--}}
@@ -259,6 +263,8 @@ if (preg_match('/mm/', \Request::PATH())) {
             $(".main-slide").owlCarousel({
                 items: 1,
                 margin: 10,
+                autoHeight: false,
+                autoHeightClass: 'owl-height',
                 autoplay: true,
                 autoplayTimeout: 5000,
                 autoplayHoverPause: false,

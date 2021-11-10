@@ -41,7 +41,7 @@
             <img src="{{asset('img/myanusedcarslogo.png')}}">
         </div>
         <div class="col-8 col-md-4 col-lg-6">
-            <div class="logottl text-md-center" style="letter-spacing:9px;">MyanusedCar</div>
+            <div class="logottl text-md-center" style="letter-spacing:2px;">MyanusedCar</div>
             <div class="logottl text-md-center" style="font-size:19px !important;">(ကားရောင်းဝယ်website)
                 </div>
         </div>
