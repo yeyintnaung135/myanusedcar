@@ -5,7 +5,7 @@ if (preg_match('/mm/', \Request::PATH())) {
     $lang_path = 'en';
 }
 ?>
- <!DOCTYPE html>
+        <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -28,7 +28,7 @@ if (preg_match('/mm/', \Request::PATH())) {
     <link href="{{asset('css/faw/css/fontawesome.css')}}" rel="stylesheet">
     <link href="{{asset('css/faw/css/brands.css')}}" rel="stylesheet">
     <link href="{{asset('css/faw/css/solid.css')}}" rel="stylesheet">
-
+    <link href="{{asset('css/loader/css/main.css')}}" rel="stylesheet">
 
     <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}"/>
 
@@ -96,7 +96,7 @@ if (preg_match('/mm/', \Request::PATH())) {
             width: 100%;
         }
         .yk_sub_title{
-          right:0;font-weight: bolder;color:#212529;
+            right:0;font-weight: bolder;color:#212529;
         }
         .yk_sub_title_two{
             font-size: 15px !important;
@@ -108,7 +108,7 @@ if (preg_match('/mm/', \Request::PATH())) {
             height: 193px;
         }
         .yk-color-detail{
-          color:#ff6600;
+            color:#ff6600;
         }
         .yk-cartitle{
             color: #ff6600;
@@ -116,9 +116,9 @@ if (preg_match('/mm/', \Request::PATH())) {
             font-weight: bolder;
         }
 
-.table td{
-    border:0px !important;
-         }
+        .table td{
+            border:0px !important;
+        }
         @media (max-width: 575.98px) {
             .ykfs{
                 font-size:74% !important;
@@ -126,27 +126,37 @@ if (preg_match('/mm/', \Request::PATH())) {
 
         }
 
+
     </style>
 
 
 </head>
 <body style="">
+<div id="loader-wrapper" >
+    <div id="loader-inner"> <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div></div>
+
+</div>
 <div class="" style="background:#f1efef;">
 
-    {{--Top bar--}}
-    @include('topbar')
+{{--Top bar--}}
+@include('topbar')
 
-    {{--Top bar--}}
+{{--Top bar--}}
 
-    {{--Menu--}}
-    @include('menu')
-    {{--Menu--}}
+{{--Menu--}}
+@include('menu')
+{{--Menu--}}
 
 
-    <!--  slider -->
-    @include('mainslide')
+<!--  slider -->
+@include('mainslide')
 
-    <!--  slider -->
+<!--  slider -->
     @section('content')
         <div class="row mt-5 mb-5 ml-0 mr-0 ml-sm-3 mr-sm-3 mr-lg-5 ml-lg-5 bg-white shadow-sm rounded">
 
@@ -181,32 +191,32 @@ if (preg_match('/mm/', \Request::PATH())) {
                 <div class="col-12 col-md-6 col-lg-4 mb-3 bg-white">
 
 
-                        <div class="card">
-                            <div class="card-horizontal">
-                                <div class="img-square-wrapper">
-                                    <img class="" style="width:150px;height:150px;" src="{{asset('backend/images/newlist/'.$ln->photo)}}" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title"> {{$ln->name}}</h4>
-                                    <br>
-                                    <p class="card-text">{{str_limit($ln->description,'52')}}
-                                    </p> </div>
+                    <div class="card">
+                        <div class="card-horizontal">
+                            <div class="img-square-wrapper">
+                                <img class="" style="width:150px;height:150px;" src="{{asset('backend/images/newlist/'.$ln->photo)}}" alt="Card image cap">
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('Y')}}
-                                    &nbsp;&nbsp; {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('F')}}
-                                    &nbsp;&nbsp;{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('j')}}</small>
-                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title"> {{$ln->name}}</h4>
+                                <br>
+                                <p class="card-text">{{str_limit($ln->description,'52')}}
+                                </p> </div>
                         </div>
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('Y')}}
+                                &nbsp;&nbsp; {{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('F')}}
+                                &nbsp;&nbsp;{{Carbon\Carbon::createFromFormat('Y-m-d H:i:s',$ln->uploat_at)->format('j')}}</small>
+                        </div>
+                    </div>
                 </div>
 
 
 
-            @endforeach
+        @endforeach
 
 
-            <!--news bar and category bar-->
+        <!--news bar and category bar-->
         </div>
     @show
 
@@ -245,9 +255,22 @@ if (preg_match('/mm/', \Request::PATH())) {
     <script type='text/javascript' src="{{asset('js/converio/js/header.js')}}"></script>
     <script src="{{asset('js/owl.carousel.min.js')}}"></script>
 
+
     <script>
 
+        jQuery(window).load(function () {
+            setInterval(function(){
+                var active = $('#loader-wrapper');
+
+                active.fadeOut('slow');
+
+            },1000);
+
+
+
+        });
         $(document).ready(function () {
+
             $('.tohide').click(function (e) {
 
                 $('.navbar-collapse.in').collapse('hide');
@@ -410,6 +433,23 @@ if (preg_match('/mm/', \Request::PATH())) {
                         loop: true
                     }
                 }
+
+
+                // "singleItem:true" is a shortcut for:
+                // items : 1,
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+
+            });
+            $(".gallery-slide").owlCarousel({
+                loop: true,
+                items: 1,
+                nav: true,
+                navText: ["<div class='yk-nav shadow prev'>&#10094;</div>", "<div class='yk-nav shadow next'>&#10095;</div>"],
+
+
 
 
                 // "singleItem:true" is a shortcut for:

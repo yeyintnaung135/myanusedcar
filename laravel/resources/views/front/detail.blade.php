@@ -20,15 +20,15 @@
             <div class="row w-100 mt-5">
                 {{--title--}}
 
-                <div class='col-7' style="">
-                    <h2 class="" style="position:absolute;right:0;font-weight: bolder;"><span
+                <div class='col-12 col-sm-8' style="">
+                    <h2 class="text-left text-sm-center" style="font-weight: bolder;"><span
                                 class=""><span style="color:#f60;">{{str_limit($car->brand,20)}} {{str_limit($car->model,20)}}</span>  {{'( '}}{{str_limit($car->price,9)}}{{trans('greeting.lakh')}}{{' )'}}</span></h2>
 
 
                 </div>
                 {{--title--}}
                 {{--see all buttom--}}
-                <div class='col-5'>
+                <div class='col-12 col-sm-4'>
                     <div id="fb-root"></div>
                     <script>
                         (function (d, s, id) {
@@ -76,6 +76,7 @@
             {{--button and title--}}
 
             <div class="col-12 col-md-6 mt-5 mb-3">
+
 
                 <div id="gallery-wrapper">
                     <div>
@@ -127,13 +128,11 @@
 
                             </div>
                         </div>
-                        <div class="bx-controls"></div>
                     </div><!-- /.gallery -->
 
                     <!--pagination div-->
                     <div id="gallery-pager" class="white block-shadow">
-                        <div class="prev">
-                        </div>
+
 
                         <div class="pager">
                             <div class="">
@@ -141,8 +140,7 @@
                             </div>
                         </div>
 
-                        <div class="next">
-                        </div>
+
                     </div><!-- /#gallery-pager -->
 
 
@@ -254,7 +252,7 @@
 
 
                 <div class="row overview mt-3 ml-3">
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="row property yk_sub_title_two">
                             <div class="col-12 p-0 mb-1">
                                                     <span class="fa fa-car">
@@ -316,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
 
                         <div class="row property yk_sub_title_two">
                             <div class="col-12 p-0 mb-1">
@@ -369,7 +367,7 @@
                         </div>
                         <br>
                     </div>
-                    <div class="col-4">
+                    <div class="col-6">
 
 
                         <div class="row property yk_sub_title_two">
@@ -402,8 +400,6 @@
                         <br>
 
                     </div>
-
-
                 </div>
 
 
